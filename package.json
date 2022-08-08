@@ -1,13 +1,16 @@
 {
   "name": "justbuy",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.15.0"
+  },
   "description": "",
   "main": "Server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node Server/server.js",
     "dev": "nodemon Server/server.js",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false && npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix client && npm run build --prefix client"
   },
   "author": "",
   "license": "ISC",
@@ -25,8 +28,10 @@
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.7.5",
     "nodemon": "^2.0.16",
+    "react": "^18.2.0",
     "react-alert": "^7.0.3",
     "react-chartjs-2": "^4.3.1",
+    "react-dom": "^18.2.0",
     "react-responsive-carousel": "^3.2.23",
     "stripe": "^9.16.0",
     "validator": "^13.7.0"
