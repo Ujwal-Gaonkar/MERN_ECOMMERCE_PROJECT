@@ -2,7 +2,8 @@
   "name": "justbuy",
   "version": "1.0.0",
   "engines": {
-    "node": "16.15.0"
+    "node": "16.15.0",
+    "npm": "8.12.1"
   },
   "description": "",
   "main": "Server/server.js",
