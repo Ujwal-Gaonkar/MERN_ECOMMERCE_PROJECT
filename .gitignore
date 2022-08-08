@@ -11,7 +11,6 @@
 /client/build
 
 # misc
-/client/src/component/User/apikeys.js
 /server/config/config.env
 /client/.DS_Store
 /client/.env.local
