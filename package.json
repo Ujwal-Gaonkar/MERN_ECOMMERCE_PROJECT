@@ -9,8 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node Server/server.js",
-    "dev": "nodemon Server/server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix client && npm run build --prefix client"
+    "dev": "nodemon Server/server.js"
   },
   "author": "",
   "license": "ISC",
@@ -32,7 +31,7 @@
     "react-chartjs-2": "^4.3.1",
     "react-dom": "^18.2.0",
     "react-responsive-carousel": "^3.2.23",
-    "stripe": "^9.16.0",
+    "stripe": "^8.174.0",
     "validator": "^13.7.0"
   }
 }

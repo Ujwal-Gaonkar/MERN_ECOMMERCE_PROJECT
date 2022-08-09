@@ -1,5 +1,4 @@
 # dependencies
-/node_modules
 /client/node_modules
 /client/.pnp
 /client/.pnp.js
@@ -11,7 +10,8 @@
 /client/build
 
 # misc
-/server/config/config.env
+/server/server/config/config.env
+/client/src/component/User/apikeys.js
 /client/.DS_Store
 /client/.env.local
 /client/.env.development.local
