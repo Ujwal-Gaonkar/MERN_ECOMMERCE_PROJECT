@@ -7,6 +7,8 @@ import PersonIcon from "@material-ui/icons/Person";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import ListAltIcon from "@material-ui/icons/ListAlt";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import HomeIcon from '@material-ui/icons/Home';
+import InfoIcon from '@material-ui/icons/Info';
 import { useAlert } from "react-alert";
 import { logout } from "../../../actions/userAction";
 import { useDispatch, useSelector } from "react-redux";
@@ -31,6 +33,8 @@ const UserOptions = ({user}) => {
       name: `Cart(${cartItems.length})`,
       func: cart,
     },
+    { icon: <HomeIcon />, name: "Home",func: home },
+    { icon: <InfoIcon />, name: "About",func: about },
     { icon: <ExitToAppIcon />, name: "Logout", func: logoutUser },
   ];
 
@@ -61,6 +65,14 @@ const UserOptions = ({user}) => {
     history.push('/');
   }
  
+  function home()
+  {
+    history.push("/");
+  }
+  function about()
+  {
+    history.push("/about");
+  }
   return (
     <Fragment>
       <Backdrop open={open} style={{ zIndex: "10" }} />

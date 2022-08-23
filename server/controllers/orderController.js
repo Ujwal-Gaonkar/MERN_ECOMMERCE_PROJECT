@@ -29,7 +29,7 @@ exports.newOrder = catchAsyncErrors(async (req, res, next) => {
     user: req.user._id,
   });
   const user = await User.findById(req.user._id);
-  const message = `Hi, \n${user.name}\nYour Oreder placed successfully\nTotal price : \n${totalPrice}\n\nHappy Shopping!!\nThank You`;
+  const message = `Hi, \n${user.name}\nYour Order placed successfully\n At : ${order.paidAt}\nTotal price : \n${totalPrice}\n\nHappy Shopping!!\nThank You`;
   try{
     await sendEmail({
       email:user.email,

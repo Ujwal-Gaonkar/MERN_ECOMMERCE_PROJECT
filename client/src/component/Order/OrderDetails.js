@@ -77,6 +77,10 @@ const OrderDetails = ({match}) => {
                   <p>Amount:</p>
                   <span>{order.totalPrice && order.totalPrice}</span>
                 </div>
+                 <div>
+                  <p>Paid At:</p>
+                  <span>{order.paidAt && order.paidAt}</span>
+                </div>
               </div>
 
               <Typography>Order Status</Typography>

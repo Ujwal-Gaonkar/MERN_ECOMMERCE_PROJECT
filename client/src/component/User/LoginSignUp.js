@@ -182,8 +182,11 @@ const LoginSignUp = ({history , location}) =>{
                   <input
                     type="text"
                     placeholder="Name"
-                    required
                     name="name"
+                    aria-errormessage="Name should be 4-16 characters and shouldn't include any special character!"
+                    aria-label="Name"
+                    pattern="^[A-Za-z ]{4,16}"
+                    required
                     value={name}
                     onChange={registerDataChange}
                   />

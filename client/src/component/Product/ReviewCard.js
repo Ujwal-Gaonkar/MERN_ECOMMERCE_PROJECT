@@ -1,9 +1,7 @@
 import { Rating } from "@material-ui/lab";
 import React from "react";
-import { useSelector } from "react-redux";
 import './reviewCard.css'
 const ReviewCard = ({ review }) => {
-  const { user} = useSelector((state) => state.user);
   const options = {
     value: review.rating,
     readOnly: true,
@@ -13,7 +11,7 @@ const ReviewCard = ({ review }) => {
   return (
     <div className="reviewCard">
       <img src={"/Profile.png"}
-            alt={user.name} />
+           alt="" />
       <p>{review.name}</p>
       <Rating{...options} />
       <span className="reviewCardComment">{review.comment}</span>

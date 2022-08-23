@@ -17,7 +17,6 @@ import "./payment.css";
 import CreditCardIcon from "@material-ui/icons/CreditCard";
 import EventIcon from "@material-ui/icons/Event";
 import VpnKeyIcon from "@material-ui/icons/VpnKey";
-import apikeys from "../../component/User/apikeys"
 import { createOrder, clearErrors } from "../../actions/orderAction";
 
 const Payment = ({ history }) => {;
@@ -45,7 +44,6 @@ const Payment = ({ history }) => {;
     shippingPrice: orderInfo.shippingCharges,
     totalPrice: orderInfo.totalPrice,
   };
-
   const submitHandler = async (e) => {
     e.preventDefault();
 
